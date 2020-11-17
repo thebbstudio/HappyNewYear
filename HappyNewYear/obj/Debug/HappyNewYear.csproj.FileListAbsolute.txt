@@ -1,0 +1,7 @@
+C:\Users\111\source\repos\HappyNewYear\HappyNewYear\bin\Debug\HappyNewYear.exe.config
+C:\Users\111\source\repos\HappyNewYear\HappyNewYear\bin\Debug\HappyNewYear.exe
+C:\Users\111\source\repos\HappyNewYear\HappyNewYear\bin\Debug\HappyNewYear.pdb
+C:\Users\111\source\repos\HappyNewYear\HappyNewYear\obj\Debug\HappyNewYear.csprojAssemblyReference.cache
+C:\Users\111\source\repos\HappyNewYear\HappyNewYear\obj\Debug\HappyNewYear.csproj.CoreCompileInputs.cache
+C:\Users\111\source\repos\HappyNewYear\HappyNewYear\obj\Debug\HappyNewYear.exe
+C:\Users\111\source\repos\HappyNewYear\HappyNewYear\obj\Debug\HappyNewYear.pdb
