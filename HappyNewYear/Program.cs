@@ -16,23 +16,42 @@ namespace HappyNewYear
         //Общий путь к каталогу с двумя папками: Санты и получатели
         public string path = "";
 
+        static Santa[] pullSants = new Santa[2];
+
         static void Main(string[] args)
         {
             Console.WriteLine("Начало работы программы");
 
-            Santa[] pullSants = new Santa[2];
 
+            pullSants[0].Name = "Ivan";
+            pullSants[1].Name = "Peter";
 
             //Добавляем имена сант и желания
+         //   foreach (Santa santa in pullSants)
+         //   {
+         //       santa.Name = ReadFiles();
+         //       santa.santasWish = ReadFiles();
+         //   }
+            //Находим сантам получателей 
             foreach (Santa santa in pullSants)
             {
-                santa.santasName = ReadFiles();
-                santa.santasWish = ReadFiles();
+                santa.giftRecipient = searchRecipient(santa.giftRecipient);
             }
 
 
-           
 
+        }
+
+        static string searchRecipient(string santaName)
+        {
+
+            Random rnd = new Random();
+
+            string name = pullSants[Convert.ToInt32(rnd)].Name;
+            if (santaName == name )
+                return searchRecipient(santaName);
+            else
+                return name;
 
         }
 

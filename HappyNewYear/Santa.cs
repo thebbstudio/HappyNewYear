@@ -8,7 +8,7 @@ namespace HappyNewYear
 {
     class Santa
     {
-        public string santasName;
+        public string Name;
         public string giftRecipient;
 
         public string santasWish = "Не указано";
