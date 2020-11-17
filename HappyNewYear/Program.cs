@@ -8,32 +8,43 @@ namespace HappyNewYear
 {
     class Program
     {
+        //Записываем имена получателя, желания получателя в экземпляре санты
+        // С помощью forech пробегаем по массиву сант
+        // Случайным образом выбирает человека который Получает подарок проверяя что это не отправитель и удаляем имя из списка 
+        // В файл с именем Дарящего добавляется Текст с описанием, рекомендации, Имя человека, список его дежалинй
 
-        //Список имён
-        public static Santa[] pullSants ;
-        
-        static void ReadAndWriteFiles(string path)
-        {
-
-        }
+        //Общий путь к каталогу с двумя папками: Санты и получатели
+        public string path = "";
 
         static void Main(string[] args)
         {
-            pullSants = new Santa[2];
             Console.WriteLine("Начало работы программы");
 
-            for(int i = 0; i < pullSants.Length; i++)
+            Santa[] pullSants = new Santa[2];
+
+
+            //Добавляем имена сант и желания
+            foreach (Santa santa in pullSants)
             {
-                Console.WriteLine("Name?");
-                pullSants[i].santasName = Console.ReadLine();
-
+                santa.santasName = ReadFiles();
+                santa.santasWish = ReadFiles();
             }
-            //Записываем имена получателя, желания получателя в экземпляре санты
-            // С помощью forech пробегаем по массиву сант
-            // Случайным образом выбирает человека который Получает подарок проверяя что это не отправитель и удаляем имя из списка 
-            // В файл с именем Дарящего добавляется Текст с описанием, рекомендации, Имя человека, список его дежалинй
 
 
+           
+
+
+        }
+
+        static string ReadFiles()
+        {
+            // индивидуальный путь
+            return "";
+        }
+
+        static void WriteFile(string text)
+        {
+            // индивидуальный путь
         }
     }
 }

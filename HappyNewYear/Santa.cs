@@ -11,9 +11,11 @@ namespace HappyNewYear
         public string santasName;
         public string giftRecipient;
 
-        public string santasWish;
+        public string santasWish = "Не указано";
         public string recipientsWish;
 
-        
+        public bool santaFound = false;
+
+
     }
 }
